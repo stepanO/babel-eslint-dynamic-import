@@ -1,5 +1,18 @@
 # Minimal Example of babel-eslint Issue
 
+## SOLUTION
+
+This was [resolved](https://github.com/babel/babel-eslint/issues/496). I did not
+have the latest version of babel-eslint.
+
+Run this to fix the issue:
+
+```
+npm install --save-dev babel-eslint@7
+```
+
+---
+
 I cannot get ESLint to recognize ES2015 dynamic imports.
 
 Every [github](https://github.com/benmosher/eslint-plugin-import/issues/743)
