@@ -1,7 +1,7 @@
-Promise.all(
+Promise.all([
     import('./a'),
     import('./b')
-).then((a, b) => {
+]).then(([{a}, {b}]) => {
     console.log(a);
     console.log(b);
 });

@@ -26,3 +26,15 @@ This results in this error for me:
 
 It looks like it cannot parse `import()`. As `./node_modules/.bin/eslint c.js`
 also results in the same error.
+
+Note that I am able to run the files in node (v6.11.0) by running them with
+`babel-node`:
+
+```
+$ ./node_modules/.bin/babel-node index.js
+a
+b
+$ ./node_modules/.bin/babel-node c.js
+Promise { <pending> }
+{ a: 'a' }
+```
