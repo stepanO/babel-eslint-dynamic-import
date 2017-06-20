@@ -1,1 +1,1 @@
-let a = import('a');
+let a = import('./a');
